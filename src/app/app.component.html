@@ -1,0 +1,12 @@
+<div [formGroup]="form">
+  <div formArrayName="questionnaire">
+    <div *ngFor="let alias of questionnaire.controls; let i = index">
+      <input id="alias-{{ i }}" type="text" [formControlName]="i" />
+    </div>
+  </div>
+
+  <br />
+
+  {{ form.status }}
+  {{ form.value | json }}
+</div>

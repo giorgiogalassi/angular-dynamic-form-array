@@ -1,0 +1,23 @@
+{
+  "questionnaire": [
+    {
+      "questionId": 0,
+      "questionCode": "mail",
+      "question": "Mail?",
+      "answerType": "input",
+      "prefilledValue": "ged.galassi@gmail.",
+      "rules": [
+        { "required": true },
+        { "regex": "^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$" }
+      ]
+    },
+    {
+      "questionId": 1,
+      "questionCode": "birth",
+      "question": "Quando sei nato?",
+      "answerType": "inputDate",
+      "prefilledValue": "test",
+      "rules": [{ "required": true }]
+    }
+  ]
+}
