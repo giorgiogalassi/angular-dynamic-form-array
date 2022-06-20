@@ -67,7 +67,6 @@ export class AppComponent {
       .subscribe(({ questionnaire }) => this.buildFormArray(questionnaire));
   }
 
-  // TODO: Add type
   buildFormArray(formResponse: any[]) {
     formResponse.forEach((question) => this.addQuestion(question));
   }
